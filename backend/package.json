@@ -3,13 +3,15 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@google/generative-ai": "^0.19.0",
-    "@prisma/client": "^5.20.0",
+    "@prisma/client": "^5.19.0",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.21.0",
@@ -17,10 +19,11 @@
     "path": "^0.12.7",
     "pdfjs-dist": "^4.6.82",
     "pdfreader": "^3.0.5",
+    "prisma": "^5.19.0",
     "ws": "^8.18.0"
   },
   "devDependencies": {
-    "prisma": "^5.20.0"
+    "nodemon": "^3.1.11"
   },
   "keywords": [],
   "description": ""

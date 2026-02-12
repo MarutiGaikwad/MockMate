@@ -14,21 +14,21 @@ datasource db {
 }
 
 model User {
-  id    Int     @id @default(autoincrement())
-  email String  @unique
-  name  String?
-  parsedResume String?
+  id             Int     @id @default(autoincrement())
+  email          String  @unique
+  name           String?
+  parsedResume   String?
   interviewCount Int?
-  reportIds Int[]
-  password String?
-  mobile String?
+  reportIds      Int[]
+  password       String?
+  mobile         String?
 }
 
 model Report {
-  id    Int     @id @default(autoincrement())
-  totalQ Int?
-  QAnswered Int?
-  accuracy Int[]
-  feedback String[]
+  id          Int      @id @default(autoincrement())
+  totalQ      Int?
+  QAnswered   Int?
+  accuracy    Int[]
+  feedback    String[]
   finalReport String?
 }
